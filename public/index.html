@@ -41,27 +41,31 @@
     </nav>
     <header>
       <div>
-          <img src="/images/profile-hex.png"> 
+          <img src="/images/mrblobby.png" height="256" width="256"> 
       </div>
       <br>
       <div>
-          <h2>Mr Bob</h2>
+          <h2>Mr Blobby</h2>
       </div>
   </header>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <h2>Spill your heart out below</h2>
         <form class="tweeterbox" action="/tweets" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <label for="tweet-text">Spill here!</label>
+          <textarea  name="text" id="tweet-text"></textarea>
           <div>
-            <button type="submit">Tweet</button>
+            <button id="tweetButton" type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
       </section>
-     
-    </main>
+     <script src="./scripts/composer-char-counter.js"></script> 
+    
+    <section class="second-tweet">
+      <h2>Heres jonny</h2>
+    </section>
+  </main>
   </body>
 </html>

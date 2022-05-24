@@ -5,7 +5,25 @@ header{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #008a8f;
-background-image: url("https://www.transparenttextures.com/patterns/wavecut.png");
+  background-image: 
+  radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
+  radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
+  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%),
+  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%);
+background-position: 0px 0px, 48px 48px, -4.8px 4.8px, 43.2px 52.8px;
+background-size: 96px 96px;
+background-color: rgb(255, 51, 160);
 
+color:yellow;
+text-shadow: 2px 2px 2px black;
+
+}
+
+header h2{
+background-color: aliceblue;
+border-radius: 5px;
+}
+
+header h2:hover{
+  background-color: black;
 }

@@ -1,15 +1,18 @@
-.tweeterbox{
-justify-content: center;
 
+.new-tweet{
+  display: flex;
+  border: 0cm;
+  width: 80%;
+  flex-direction: column;
+  
 }
-
 
 textarea {
   border: 0ch;
   background-color:#f4f1ec ;
-  width: auto;
- 
-  border-bottom: .5rem solid
+  width: 100%;
+  resize: none;
+  border-bottom: .5rem solid #545149
 }
 
 button{
@@ -21,12 +24,19 @@ button{
 }
 .counter{
   font-family: 'Bungee', sans-serif;
+
 }
 
 label{
+  display: flex;
   font-weight:bolder;
+  flex-direction: column;
 }
 div{
   display: flex;
   justify-content: space-between;
+}
+
+.red{
+  color: red;
 }
