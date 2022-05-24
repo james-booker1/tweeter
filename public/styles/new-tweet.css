@@ -1,0 +1,32 @@
+.tweeterbox{
+justify-content: center;
+
+}
+
+
+textarea {
+  border: 0ch;
+  background-color:#f4f1ec ;
+  width: auto;
+ 
+  border-bottom: .5rem solid
+}
+
+button{
+  background-color:#4056a1 ;
+  font-family: 'Bungee', sans-serif;
+  color: white;
+  font-size: large
+  ;
+}
+.counter{
+  font-family: 'Bungee', sans-serif;
+}
+
+label{
+  font-weight:bolder;
+}
+div{
+  display: flex;
+  justify-content: space-between;
+}
