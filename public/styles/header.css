@@ -1,0 +1,11 @@
+header{
+  display: flex;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #008a8f;
+background-image: url("https://www.transparenttextures.com/patterns/wavecut.png");
+
+}
