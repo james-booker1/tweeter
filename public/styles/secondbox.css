@@ -1,0 +1,24 @@
+.second-tweet{
+  display: flex;
+  border: 2px solid #545149;
+  width: 80%;
+  flex-direction: column;
+}
+
+.tweet{
+  /* border-bottom: 2px solid #545149; */
+}
+
+.footer{
+  border-top: 2px solid #545149;
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+
+.icons{
+  display: flex;
+ 
+  align-items: center;
+}

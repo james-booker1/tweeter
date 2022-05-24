@@ -1,4 +1,4 @@
-header{
+ .specialHeader{
   display: flex;
   height: 400px;
   width: 100%;
@@ -19,11 +19,11 @@ text-shadow: 2px 2px 2px black;
 
 }
 
-header h2{
+.specialHeader h2{
 background-color: aliceblue;
 border-radius: 5px;
 }
 
-header h2:hover{
+.specialHeader h2:hover{
   background-color: black;
 }
