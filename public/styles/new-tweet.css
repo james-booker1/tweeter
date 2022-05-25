@@ -12,7 +12,9 @@ textarea {
   background-color:#f4f1ec ;
   width: 100%;
   resize: none;
-  border-bottom: .5rem solid #545149
+  border-bottom: .5rem solid #545149;
+  outline-color:#f4f1ec;
+  height: 40px;
 }
 
 button{
