@@ -34,9 +34,8 @@ body {
  
  @media only screen and (min-width: 768px) {
    .specialHeader{
-    max-height: 400px;
-    margin-top: 115px;
-    padding-top: 0px !important;
+    height: 515px;
+    
    }
   .nav{
     background-color: #4056a1;
@@ -51,7 +50,7 @@ body {
     float: left;
     margin-top: 50px;
     margin-left: 50px;
-    
+    padding-top: 0px !important;
   }
 
   .container{

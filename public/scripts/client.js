@@ -41,7 +41,7 @@ $(document).ready(function () {
 
     const $tweet = $(`<article class="second-tweet">
     <header class="header2">
-      <img ${data.user.avatars}>
+      <img src="${data.user.avatars}">
     <div class="headernames">
    <h3>${data.user.name}</h3> 
    <h3><strong>${data.user.handle}</strong></h3>
