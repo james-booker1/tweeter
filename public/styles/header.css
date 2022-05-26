@@ -1,8 +1,9 @@
  .specialHeader{
   display: flex;
-  height: 400px;
+  z-index: 1;
+  height: 515px;
   width: 100%;
-  margin-top: 115px;
+  padding-top: 115px;
   justify-content: center;
   align-items: center;
   flex-direction: column;

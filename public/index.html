@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
@@ -27,11 +28,14 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+
+    <!--External timer-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
+    <nav class="nav">
       
       <span class="logo">tweeter</span>
       <div class="navright">
@@ -52,9 +56,9 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Spill your heart out below</h2>
-        <form class="tweeterbox" action="/tweets" method="POST">
-          <label for="tweet-text">Spill here!</label>
+        <div class="error"></div>
+        <form class="tweeterbox" action="/" method="POST">
+          <label id="sentence" for="tweet-text">Whats on your mind:</label>
           <textarea  name="text" id="tweet-text"></textarea>
           <div>
             <button id="tweetButton" type="submit">Tweet</button>
@@ -64,7 +68,7 @@
       </section>
      <script src="./scripts/composer-char-counter.js"></script> 
     <section class="tweets">
-    <article class="second-tweet">
+    <!-- <article class="second-tweet">
         <header class="header2">
           <img src="/images/73hZDYK.png" height="50" width="50">
         <div class="headernames">
@@ -83,7 +87,7 @@
         <i class="fa-solid fa-heart"></i>
       </div>
       </footer>
-    </article>
+    </article> -->
   </section>
   </main>
   </body>

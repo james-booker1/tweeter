@@ -1,11 +1,16 @@
 // const { render } = require("express/lib/response");
 
+// const tweets = require("../../server/routes/tweets");
+
+// const { json } = require("express/lib/response");
+
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function () {
+  jQuery("time.timeago").timeago();
   const data = [
     {
       user: {
@@ -32,6 +37,8 @@ $(document).ready(function () {
   ];
 
   const createTweetElement = (data) => {
+    let date = jQuery.timeago(new Date(data.created_at));
+
     const $tweet = $(`<article class="second-tweet">
     <header class="header2">
       <img ${data.user.avatars}>
@@ -41,10 +48,10 @@ $(document).ready(function () {
     </div>
 </header>
    <div class="tweetInput">
-    <label class="tweet">${data.content.text}</label>
+    <label class="tweet">${escape(data.content.text)}</label>
   </div>
   <footer class="footer">
-    <h5>${data.created_at}</h5>
+    <h5 class="timeago" >${date}</h5>
     <div class="icons" >
     <i class="fa-solid fa-flag"></i>
     <i class="fa-solid fa-retweet"></i>
@@ -57,11 +64,51 @@ $(document).ready(function () {
   };
 
   const renderTweets = (data) => {
+    $(".tweets").empty();
     for (const tweet of data) {
-      console.log(tweet);
-      $(".tweets").append(createTweetElement(tweet));
+      $(".tweets").prepend(createTweetElement(tweet));
     }
   };
+  $(".error").hide();
+  $("form").on("submit", (evt) => {
+    evt.preventDefault();
+    $(".error").slideUp(100).text("");
+    if ($("#tweet-text").val().length === 0) {
+      return $(".error").text("You must have an entry to post").slideDown();
+    }
+    if ($("#tweet-text").val().length > 140) {
+      return $(".error")
+        .text("You need to be under 140 character limit.")
+        .slideDown();
+    }
 
-  renderTweets(data);
+    const tweet = $("form").serialize();
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: tweet,
+      success: function (data) {
+        loadTweets();
+        $("textarea").val("").trigger("input");
+      },
+    });
+  });
+
+  const loadTweets = () => {
+    $.ajax({
+      method: "GET",
+      url: "/tweets",
+      dataType: "json",
+      success: function (data) {
+        renderTweets(data);
+      },
+    });
+  };
+  loadTweets();
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 });

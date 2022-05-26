@@ -32,3 +32,33 @@ body {
    align-items: center;
  }
  
+ @media only screen and (min-width: 768px) {
+   .specialHeader{
+    max-height: 400px;
+    margin-top: 115px;
+    padding-top: 0px !important;
+   }
+  .nav{
+    background-color: #4056a1;
+  }
+ 
+}
+
+@media only screen and (min-width: 1024px) {
+  .specialHeader {
+    max-height: 400px;
+    max-width: 30%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    
+  }
+
+  .container{
+    margin-top: 150px;
+  }
+
+  .nav{
+    background-color: #4056a1;
+  }
+}

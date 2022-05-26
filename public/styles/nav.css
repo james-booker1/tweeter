@@ -5,21 +5,23 @@
   align-items: center;
   flex-direction: row;
   position: fixed;
+  z-index: 2;
   top: 0px;
   
   height: 120px; 
   width: 100%;
   color: #FFFFFF;
-  background-color: #4056a1;
+  background-color: transparent;
   padding-left: 1.5em;
   padding-right: 1.5em;
-
+  text-shadow: 2px 2px 2px black;
 }
 
 .navright{
   display: flex;
   text-align: center;
   flex-direction: column;
+  
 }
 .fa-solid.fa-angles-down{
 color: rgb(255, 51, 160);

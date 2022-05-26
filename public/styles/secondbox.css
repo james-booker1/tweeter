@@ -9,8 +9,12 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 50px;
-  box-shadow: 5px 5px 5px rgb(255, 51, 160);;
+  box-shadow: 5px 5px 5px rgb(255, 51, 160);
+  overflow-wrap: anywhere;
 }
+
+
+  
 
 .second-tweet:hover{
  box-shadow: 5px 5px 5px rgb(246, 249, 31);
@@ -63,3 +67,4 @@ color: rgb(255, 51, 160);
 .fa-solid.fa-heart:hover{
   color: rgb(255, 51, 160);
 }
+
