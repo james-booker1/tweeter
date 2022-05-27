@@ -1,5 +1,4 @@
-
- nav{ 
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,8 +6,8 @@
   position: fixed;
   z-index: 2;
   top: 0px;
-  
-  height: 120px; 
+
+  height: 120px;
   width: 100%;
   color: #FFFFFF;
   background-color: transparent;
@@ -17,21 +16,23 @@
   text-shadow: 2px 2px 2px black;
 }
 
-.navright{
+.navright {
   display: flex;
   text-align: center;
   flex-direction: column;
-  
-}
-.fa-solid.fa-angles-down{
-color: rgb(255, 51, 160);
 
 }
-.fa-solid.fa-angles-down:hover{
+
+.fa-solid.fa-angles-down {
+  color: rgb(255, 51, 160);
+
+}
+
+.fa-solid.fa-angles-down:hover {
   color: rgb(246, 249, 31);
-  
-  }
 
-.logo{
+}
+
+.logo {
   font-family: 'Bungee', sans-serif;
 }

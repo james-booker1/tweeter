@@ -1,8 +1,8 @@
-.tweets{
+.tweets {
   width: 80%;
 }
 
-.second-tweet{
+.second-tweet {
   display: flex;
   border: 2px solid #545149;
   flex-direction: column;
@@ -12,14 +12,14 @@
   box-shadow: 5px 5px 5px rgb(255, 51, 160);
   overflow-wrap: anywhere;
 }
-  
 
-.second-tweet:hover{
- box-shadow: 5px 5px 5px rgb(246, 249, 31);
+
+.second-tweet:hover {
+  box-shadow: 5px 5px 5px rgb(246, 249, 31);
 }
 
 
-.footer{
+.footer {
   border-top: 2px solid #545149;
   display: flex;
   justify-content: space-between;
@@ -27,26 +27,26 @@
   margin-top: 15px;
 }
 
-.icons{
+.icons {
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 100px;
 }
 
-.header2{
+.header2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-bottom: 15px;
 }
 
-.tweetInput{
+.tweetInput {
   display: flex;
-  
+
 }
 
-.headernames{
+.headernames {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,21 +55,20 @@
   padding-right: 15px;
 }
 
-#tag{
-  font-style:oblique;
-  font-weight:800;
-  
+#tag {
+  font-style: oblique;
+  font-weight: 800;
+
 }
 
-.fa-solid.fa-flag:hover{
-color: rgb(255, 51, 160);
-}
-
-.fa-solid.fa-retweet:hover{
+.fa-solid.fa-flag:hover {
   color: rgb(255, 51, 160);
 }
 
-.fa-solid.fa-heart:hover{
+.fa-solid.fa-retweet:hover {
   color: rgb(255, 51, 160);
 }
 
+.fa-solid.fa-heart:hover {
+  color: rgb(255, 51, 160);
+}

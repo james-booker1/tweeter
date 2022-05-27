@@ -1,94 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <!-- Meta Information -->
-    <title>Tweeter - Home Page</title>
 
-    <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-    <!--Bungee-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<head>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+  <!-- Meta Information -->
+  <title>Tweeter - Home Page</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+  <!--Bungee-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-<!--Source Sans Pro 300-->
+  <!--Source Sans Pro 300-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300&display=swap"
+    rel="stylesheet">
   <!--font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/secondbox.css" type="text/css" />
-    <!-- External JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- App CSS -->
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/secondbox.css" type="text/css" />
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <!-- App JS -->
-    <script type="text/javascript" src="/scripts/client.js"></script>
+  <!-- App JS -->
+  <script type="text/javascript" src="/scripts/client.js"></script>
 
-    <!--External timer-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js" integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </head>
+  <!--External timer-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timeago/1.6.7/jquery.timeago.min.js"
+    integrity="sha512-RlGrSmkje9EE/FXpJKWf0fvOlg4UULy/blvNsviBX9LFwMj/uewXVoanRbxTIRDXy/0A3fBQppTmJ/qOboJzmA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
 
-  <body>
-    <!-- Top nav bar (fixed) -->
-    <nav class="nav">
-      
-      <span class="logo">tweeter</span>
-      <div class="navright">
+<body>
+  <!-- Top nav bar (fixed) -->
+  <nav class="nav">
+
+    <span class="logo">tweeter</span>
+    <div class="navright">
       <span> <strong>Write</strong> a new tweet</span>
       <i class="fa-solid fa-angles-down"></i>
     </div>
 
-    </nav>
-    <header class="specialHeader">
-      <div>
-          <img src="/images/mrblobby.png" height="256" width="256"> 
-      </div>
-      <br>
-      <div>
-          <h2>Mr Blobby</h2>
-      </div>
+  </nav>
+  <header class="specialHeader">
+    <div>
+      <img src="/images/mrblobby.png" height="256" width="256">
+    </div>
+    <br>
+    <div>
+      <h2>Mr Blobby</h2>
+    </div>
   </header>
-    <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <div class="error"></div>
-        <form class="tweeterbox" action="/" method="POST">
-          <label id="sentence" for="tweet-text">Whats on your mind:</label>
-          <textarea  name="text" id="tweet-text"></textarea>
-          <div>
-            <button id="tweetButton" type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>
-     <script src="./scripts/composer-char-counter.js"></script> 
-    <section class="tweets">
-    <!-- <article class="second-tweet">
-        <header class="header2">
-          <img src="/images/73hZDYK.png" height="50" width="50">
-        <div class="headernames">
-       <h3>Johnathan</h3> 
-       <h3><strong>@BlobbyTroll</strong></h3>
+  <!-- Page-specific (main) content here -->
+  <main class="container">
+    <section class="new-tweet">
+      <div class="error"></div>
+      <form class="tweeterbox" action="/" method="POST">
+        <label id="sentence" for="tweet-text">Whats on your mind:</label>
+        <textarea name="text" id="tweet-text"></textarea>
+        <div>
+          <button id="tweetButton" type="submit">Tweet</button>
+          <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
-    </header>
-       <div class="tweetInput">
-        <label class="tweet">This Mr Blobby is nothing without Nole!</label>
-      </div>
-      <footer class="footer">
-        <h5>10 days ago</h5>
-        <div class="icons" >
-        <i class="fa-solid fa-flag"></i>
-        <i class="fa-solid fa-retweet"></i>
-        <i class="fa-solid fa-heart"></i>
-      </div>
-      </footer>
-    </article> -->
-  </section>
+      </form>
+    </section>
+    <script src="./scripts/composer-char-counter.js"></script>
+    <section class="tweets">
+
+    </section>
   </main>
-  </body>
+</body>
+
 </html>
