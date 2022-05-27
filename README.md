@@ -6,8 +6,11 @@ This project makes use of HtML, CSS, jQuery, JS and AJAX.
 
 ## Project Images
 !["Screenshot of empty page"] (https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
+
 !["Screenshot of character counter"] (https://github.com/james-booker1/tweeter/blob/master/docs/counter.png?raw=true)
+
 !["Screenshot trying to post empty tweet"] (https://github.com/james-booker1/tweeter/blob/master/docs/empty-tweet.png?raw=true)
+
 !["Screenshot trying to enter too many characters"] (https://github.com/james-booker1/tweeter/blob/master/docs/longtweet.png?raw=true)
 
 ## Getting Started 
