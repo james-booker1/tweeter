@@ -11,30 +11,6 @@
  */
 $(document).ready(function () {
   jQuery("time.timeago").timeago();
-  const data = [
-    {
-      user: {
-        name: "Newton",
-        avatars: "https://i.imgur.com/73hZDYK.png",
-        handle: "@SirIsaac",
-      },
-      content: {
-        text: "If I have seen further it is by standing on the shoulders of giants",
-      },
-      created_at: 1461116232227,
-    },
-    {
-      user: {
-        name: "Descartes",
-        avatars: "https://i.imgur.com/nlhLi3I.png",
-        handle: "@rd",
-      },
-      content: {
-        text: "Je pense , donc je suis",
-      },
-      created_at: 1461113959088,
-    },
-  ];
 
   const createTweetElement = (data) => {
     let date = jQuery.timeago(new Date(data.created_at));
@@ -62,13 +38,15 @@ $(document).ready(function () {
     console.log($tweet);
     return $tweet;
   };
-
+  // renders new tweets using template above.
   const renderTweets = (data) => {
     $(".tweets").empty();
     for (const tweet of data) {
       $(".tweets").prepend(createTweetElement(tweet));
     }
   };
+
+  // shows error message if requirements marked out below arent met.
   $(".error").hide();
   $("form").on("submit", (evt) => {
     evt.preventDefault();
@@ -81,7 +59,7 @@ $(document).ready(function () {
         .text("You need to be under 140 character limit.")
         .slideDown();
     }
-
+    // Posts new tweets to the site.
     const tweet = $("form").serialize();
     $.ajax({
       method: "POST",
@@ -93,7 +71,7 @@ $(document).ready(function () {
       },
     });
   });
-
+  // Gets new tweets from the site.
   const loadTweets = () => {
     $.ajax({
       method: "GET",
