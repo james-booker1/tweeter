@@ -7,7 +7,7 @@ This project makes use of HtML, CSS, jQuery, JS and AJAX.
 ## Project Images
 !["Screenshot of empty page"](https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
 
-!["Screenshot trying to post empty tweet"](https://github.com/james-booker1/tweeter/blob/master/docs/No%20entry.png?raw=true))
+!["Screenshot trying to post empty tweet"](https://github.com/james-booker1/tweeter/blob/master/docs/No%20entry.png?raw=true)
 
 !["Gif of desktop site"](https://github.com/james-booker1/tweeter/blob/master/docs/ezgif.com-gif-maker.gif?raw=true)
 ## Getting Started 
