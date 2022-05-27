@@ -12,8 +12,6 @@
   box-shadow: 5px 5px 5px rgb(255, 51, 160);
   overflow-wrap: anywhere;
 }
-
-
   
 
 .second-tweet:hover{
@@ -53,7 +51,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 10px;
+  padding-left: 30px;
+  padding-right: 15px;
+}
+
+#tag{
+  font-style:oblique;
+  font-weight:800;
+  
 }
 
 .fa-solid.fa-flag:hover{
