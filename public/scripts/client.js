@@ -1,21 +1,16 @@
-// const { render } = require("express/lib/response");
-
-// const tweets = require("../../server/routes/tweets");
-
-// const { json } = require("express/lib/response");
-
 /*
  * Client-side JS logic goes here
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 $(document).ready(function () {
-  jQuery("time.timeago").timeago();
+  $("time.timeago").timeago();
 
   const createTweetElement = (data) => {
-    let date = jQuery.timeago(new Date(data.created_at));
+    let date = $.timeago(new Date(data.created_at));
 
-    const $tweet = $(`<article class="second-tweet">
+    const $tweet = $(
+      `<article class="second-tweet">
     <header class="header2">
       <img src="${data.user.avatars}">
     <div class="headernames">
@@ -34,10 +29,11 @@ $(document).ready(function () {
     <i class="fa-solid fa-heart"></i>
   </div>
   </footer>
-</article>`);
-    console.log($tweet);
+</article>`
+    );
     return $tweet;
   };
+
   // renders new tweets using template above.
   const renderTweets = (data) => {
     $(".tweets").empty();
@@ -51,14 +47,16 @@ $(document).ready(function () {
   $("form").on("submit", (evt) => {
     evt.preventDefault();
     $(".error").slideUp(100).text("");
-    if ($("#tweet-text").val().length === 0) {
-      return $(".error").text("  You must have an entry to post").slideDown();
+    const tweetLength = $("#tweet-text").val().length;
+    if (tweetLength === 0) {
+      return $(".error").text("You must have an entry to post").slideDown();
     }
-    if ($("#tweet-text").val().length > 140) {
+    if (tweetLength > 140) {
       return $(".error")
         .text("You need to be under 140 character limit.")
         .slideDown();
     }
+
     // Posts new tweets to the site.
     const tweet = $("form").serialize();
     $.ajax({
@@ -67,10 +65,11 @@ $(document).ready(function () {
       data: tweet,
       success: function (data) {
         loadTweets();
-        $("textarea").val("").trigger("input");
+        $("textarea").val("");
       },
     });
   });
+
   // Gets new tweets from the site.
   const loadTweets = () => {
     $.ajax({
@@ -82,6 +81,7 @@ $(document).ready(function () {
       },
     });
   };
+
   loadTweets();
 
   const escape = function (str) {
