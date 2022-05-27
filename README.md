@@ -2,6 +2,8 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
+This project makes use of HtML, CSS, jQuery, JS and AJAX.  
+
 ## Project Images
 !["Screenshot of empty page"] (https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
 !["Screenshot of character counter"] (https://github.com/james-booker1/tweeter/blob/master/docs/counter.png?raw=true)
