@@ -3,8 +3,10 @@
 Tweeter is a simple, single-page Twitter clone.
 
 ## Project Images
-
-https://github.com/james-booker1/tweeter/blob/master/public/images/Screen%20Shot%202022-05-26%20at%206.25.13%20PM.png?raw=true
+!["Screenshot of empty page"] (https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
+!["Screenshot of character counter"] (https://github.com/james-booker1/tweeter/blob/master/docs/counter.png?raw=true)
+!["Screenshot trying to post empty tweet"] (https://github.com/james-booker1/tweeter/blob/master/docs/empty-tweet.png?raw=true)
+!["Screenshot trying to enter too many characters"] (https://github.com/james-booker1/tweeter/blob/master/docs/longtweet.png?raw=true)
 
 ## Getting Started 
 
