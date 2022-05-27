@@ -4,7 +4,7 @@ Tweeter is a simple, single-page Twitter clone.
 
 ## Project Images
 
-
+https://github.com/james-booker1/tweeter/blob/master/public/images/Screen%20Shot%202022-05-26%20at%206.25.13%20PM.png?raw=true
 
 ## Getting Started 
 
