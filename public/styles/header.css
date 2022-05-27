@@ -21,6 +21,7 @@
   
   font-family: 'Bungee', sans-serif;
   box-shadow: 0 5px 5px -1px black;
+  cursor: url('/images/blobhead.png'), auto;
 }
 
 .specialHeader:hover {

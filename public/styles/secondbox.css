@@ -43,7 +43,11 @@
 
 .tweetInput {
   display: flex;
+  cursor: url('/images/blobhead.png'), auto;
+}
 
+.tweet {
+  cursor: url('/images/blobhead.png'), auto;
 }
 
 .headernames {
