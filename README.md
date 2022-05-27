@@ -5,14 +5,11 @@ Tweeter is a simple, single-page Twitter clone.
 This project makes use of HtML, CSS, jQuery, JS and AJAX.  
 
 ## Project Images
-!["Screenshot of empty page"] (https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
+!["Screenshot of empty page"](https://github.com/james-booker1/tweeter/blob/master/docs/home.png?raw=true)
 
-!["Screenshot of character counter"] (https://github.com/james-booker1/tweeter/blob/master/docs/counter.png?raw=true)
+!["Screenshot trying to post empty tweet"](https://github.com/james-booker1/tweeter/blob/master/docs/No%20entry.png?raw=true))
 
-!["Screenshot trying to post empty tweet"] (https://github.com/james-booker1/tweeter/blob/master/docs/empty-tweet.png?raw=true)
-
-!["Screenshot trying to enter too many characters"] (https://github.com/james-booker1/tweeter/blob/master/docs/longtweet.png?raw=true)
-
+!["Screenshot trying to enter too many characters"](https://github.com/james-booker1/tweeter/blob/master/docs/Over%20Limit.png?raw=true)
 ## Getting Started 
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
