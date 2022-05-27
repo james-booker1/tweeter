@@ -9,7 +9,7 @@ This project makes use of HtML, CSS, jQuery, JS and AJAX.
 
 !["Screenshot trying to post empty tweet"](https://github.com/james-booker1/tweeter/blob/master/docs/No%20entry.png?raw=true))
 
-!["Screenshot trying to enter too many characters"](https://github.com/james-booker1/tweeter/blob/master/docs/Over%20Limit.png?raw=true)
+!["Gif of desktop site"](https://github.com/james-booker1/tweeter/blob/master/docs/ezgif.com-gif-maker.gif?raw=true)
 ## Getting Started 
 
 1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
