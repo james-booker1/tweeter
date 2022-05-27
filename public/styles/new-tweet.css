@@ -23,7 +23,7 @@ button {
   color: white;
   font-size: large;
   text-shadow: 2px 2px 2px black;
-  cursor: url('/images/blobhead.png'), auto;
+  cursor: pointer;
   border: double palevioletred;
   border-radius: 20px 20px 20px ;
   box-shadow:  2px 2px 2px black;
