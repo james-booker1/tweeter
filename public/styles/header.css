@@ -1,4 +1,4 @@
- .specialHeader{
+.specialHeader {
   display: flex;
   z-index: 1;
   height: 515px;
@@ -7,45 +7,44 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: 
-  radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
-  radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
-  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%),
-  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%);
-background-position: 0px 0px, 48px 48px, -4.8px 4.8px, 43.2px 52.8px;
-background-size: 96px 96px;
-background-color: rgb(255, 51, 160);
+  background-image:
+    radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
+    radial-gradient(rgb(255, 255, 255) 30%, transparent 30%),
+    radial-gradient(rgb(0, 0, 0) 30%, transparent 30%),
+    radial-gradient(rgb(0, 0, 0) 30%, transparent 30%);
+  background-position: 0px 0px, 48px 48px, -4.8px 4.8px, 43.2px 52.8px;
+  background-size: 96px 96px;
+  background-color: rgb(255, 51, 160);
 
-color:rgb(246, 249, 31);
-text-shadow: 2px 2px 2px black;
+  color: rgb(246, 249, 31);
+  text-shadow: 2px 2px 2px black;
+  font-family: 'Bungee', sans-serif;
+}
+
+.specialHeader:hover {
+  background-image:
+    radial-gradient(rgb(246, 249, 31) 30%, transparent 30%),
+    radial-gradient(rgb(246, 249, 31) 30%, transparent 30%),
+    radial-gradient(rgb(0, 0, 0) 30%, transparent 30%),
+    radial-gradient(rgb(0, 0, 0) 30%, transparent 30%);
+  background-position: 0px 0px, 48px 48px, -4.8px 4.8px, 43.2px 52.8px;
+  background-size: 96px 96px;
+  background-color: rgb(255, 51, 160);
+}
+
+
+
+
+.specialHeader h2 {
+  display: flex;
+  background-color: aliceblue;
+  width: 250px;
+  height: 40px;
+  border-radius: 140px 140px 140px 140px;
+  justify-content: center;
 
 }
 
-.specialHeader:hover{
-  background-image: 
-  radial-gradient(rgb(246, 249, 31) 30%, transparent 30%),
-  radial-gradient(rgb(246, 249, 31) 30%, transparent 30%),
-  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%),
-  radial-gradient(rgb(0, 0, 0) 30%, transparent 30%);
-background-position: 0px 0px, 48px 48px, -4.8px 4.8px, 43.2px 52.8px;
-background-size: 96px 96px;
-background-color: rgb(255, 51, 160);
-}
-
-
-
-
-.specialHeader h2{
-display: flex;
-background-color: aliceblue;
-width: 170px;
-height: 50px;
-border-radius: 140px 140px 140px 140px;
-justify-content: center;
-
-}
-
-.specialHeader h2:hover{
+.specialHeader h2:hover {
   background-color: black;
 }
-

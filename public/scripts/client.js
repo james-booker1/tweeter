@@ -43,8 +43,8 @@ $(document).ready(function () {
     <header class="header2">
       <img src="${data.user.avatars}">
     <div class="headernames">
-   <h3>${data.user.name}</h3> 
-   <h3><strong>${data.user.handle}</strong></h3>
+   <h4>${data.user.name}</h4> 
+   <h4 id="tag">${data.user.handle}</h4>
     </div>
 </header>
    <div class="tweetInput">
@@ -74,7 +74,7 @@ $(document).ready(function () {
     evt.preventDefault();
     $(".error").slideUp(100).text("");
     if ($("#tweet-text").val().length === 0) {
-      return $(".error").text("You must have an entry to post").slideDown();
+      return $(".error").text("  You must have an entry to post").slideDown();
     }
     if ($("#tweet-text").val().length > 140) {
       return $(".error")
