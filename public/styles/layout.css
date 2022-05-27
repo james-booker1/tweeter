@@ -43,6 +43,7 @@ body {
 
   .nav {
     background-color: purple;
+    box-shadow: 0 5px 5px -1px black;
   }
 
 }
@@ -64,5 +65,10 @@ body {
 
   .nav {
     background-color: purple;
+    box-shadow: 0 5px 5px -1px black;
+  }
+
+  .head {
+    cursor: url('/images/blobhead.png'), auto;
   }
 }

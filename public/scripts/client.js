@@ -65,7 +65,7 @@ $(document).ready(function () {
       data: tweet,
       success: function (data) {
         loadTweets();
-        $("textarea").val("");
+        $("textarea").val("").trigger("input");
       },
     });
   });

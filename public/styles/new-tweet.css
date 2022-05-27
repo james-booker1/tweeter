@@ -14,7 +14,7 @@ textarea {
   border-bottom: .5rem solid #545149;
   outline-color: #f4f1ec;
   height: 40px;
-
+  cursor: url('/images/blobhead.png'), auto;
 }
 
 button {
@@ -22,6 +22,11 @@ button {
   font-family: 'Bungee', sans-serif;
   color: white;
   font-size: large;
+  text-shadow: 2px 2px 2px black;
+  cursor: url('/images/blobhead.png'), auto;
+  border: double palevioletred;
+  border-radius: 20px 20px 20px ;
+  box-shadow:  2px 2px 2px black;
 }
 
 button:hover {
@@ -64,5 +69,5 @@ div {
 
 #sentence {
   margin-top: 20px;
-
+  cursor: url('/images/blobhead.png'), auto;
 }
