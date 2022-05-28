@@ -14,7 +14,6 @@ textarea {
   border-bottom: .5rem solid #545149;
   outline-color: #f4f1ec;
   height: 40px;
-  cursor: url('/images/blobhead.png'), auto;
 }
 
 button {

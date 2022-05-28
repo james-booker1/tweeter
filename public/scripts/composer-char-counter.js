@@ -5,10 +5,8 @@ $(document).ready(function () {
 
     if (counter.val() < 0) {
       counter.addClass("red");
-      $("#tweetButton").attr("disabled", "disabled");
     } else {
       counter.removeClass("red");
-      $("#tweetButton").removeAttr("disabled", "disabled");
     }
   });
 });
